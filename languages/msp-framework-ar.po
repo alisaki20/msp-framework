@@ -1,0 +1,256 @@
+# Translation of Material Setings Page in Arabic
+# This file is distributed under the same license as the Material Setings Page package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-30 03:19+0330\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Poedit 2.2\n"
+"Language: ar\n"
+"Project-Id-Version: Material Setings Page\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: inc/templates/default/default.php:228
+msgid "OK"
+msgstr "حسنا"
+
+#: inc/templates/default/default.php:219
+msgid "Messages"
+msgstr "الرسائل"
+
+#: inc/classes/Validation.php:114
+msgid "The value should not be empty"
+msgstr "هذه القيمة يجب ألا تكون فارغة"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:101
+msgid "'%s' is not valid number"
+msgstr "'%s' ليس رقم"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:85
+msgid "'%s' is invalid url"
+msgstr "'%s' هو عنوان url غير صالح"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:69
+msgid "'%s' is invalid email"
+msgstr "'%s' هو بريد إلكتروني غير صالح"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:53
+msgid "'%s' is invalid hexadecimal color code"
+msgstr "'%s' هو رمز لون سداسي عشري غير صالح"
+
+#: inc/fields/switch/switch.php:35
+msgid "Enable \\ Disable"
+msgstr "مفعل / غير مفعل"
+
+#: inc/templates/default/default.php:94
+msgid "Show Separated sections"
+msgstr "إظهار أقسام منفصلة"
+
+#: inc/templates/default/default.php:92 inc/templates/default/default.php:96
+msgid "Show all sections"
+msgstr "عرض كل الأقسام"
+
+#: inc/templates/default/transfer-settings-section.php:187
+msgid "Please select the sections you want to restore"
+msgstr "الرجاء تحديد الأقسام التي تريد استعادتها"
+
+#: inc/templates/default/transfer-settings-section.php:154
+msgid "Do you want to Restore anyway?"
+msgstr "هل تريد الاستعادة على أي حال؟"
+
+#: inc/templates/default/transfer-settings-section.php:149
+msgid "This is a backup of various settings versions and may not be compatible with this version."
+msgstr "هذه نسخة احتياطية من إصدار إعدادات مختلفة وقد لا تكون متوافقة مع هذا الإصدار."
+
+#: inc/templates/default/transfer-settings-section.php:22
+msgid "In this section you can transferring your settings to other site by getting backup file or copy data to clipboard"
+msgstr "في هذا القسم، يمكنك نقل إعداداتك إلى موقع آخر عن طريق الحصول على ملف النسخ الاحتياطي أو نسخ البيانات إلى الحافظة"
+
+#: inc/classes/SettingsPage.php:525
+msgid "Your changes have been saved successfully."
+msgstr "تم حفظ التغييرات الخاصة بك بنجاح."
+
+#: inc/classes/SettingsPage.php:501
+msgid "The values have not been sent for save."
+msgstr "لم يتم إرسال القيم للحفظ."
+
+#: inc/classes/SettingsPage.php:491
+msgid "You do not have permission to modify these options."
+msgstr "ليس لديك إذن لتعديل هذه الخيارات."
+
+#: inc/classes/SettingsPage.php:487
+msgid "You are not logged in, please login and try again."
+msgstr "أنت لم تسجل الدخول، يرجى تسجيل الدخول والمحاولة مرة أخرى."
+
+#: inc/classes/SettingsPage.php:435
+msgid "Your backup successfully restored."
+msgstr "تمت استعادة نسختك الاحتياطية بنجاح."
+
+#: inc/classes/SettingsPage.php:433
+msgid "This backup is from other settings and it's not compatible with this settings."
+msgstr "هذه النسخة الاحتياطية من إعدادات أخرى وهي غير متوافقة مع هذه الإعدادات."
+
+#: inc/classes/SettingsPage.php:432
+msgid "The backup data is not valid."
+msgstr "بيانات النسخ الاحتياطي غير صالحة."
+
+#: inc/classes/SettingsPage.php:429
+msgid "connection timeout."
+msgstr "انتهى وقت محاولة الاتصال."
+
+#: inc/classes/SettingsPage.php:428
+msgid "Unexpected error."
+msgstr "خطأ غير متوقع."
+
+#: inc/classes/SettingsPage.php:427
+msgid "Saving ..."
+msgstr "جارٍ الحفظ ..."
+
+#: inc/templates/default/transfer-settings-section.php:221
+#: inc/templates/default/transfer-settings-section.php:293
+msgid "Fields Count"
+msgstr "عدد الحقول"
+
+#: inc/templates/default/transfer-settings-section.php:217
+#: inc/templates/default/transfer-settings-section.php:289
+msgid "Section Name"
+msgstr "اسم القسم"
+
+#: inc/templates/default/transfer-settings-section.php:203
+#: inc/templates/default/transfer-settings-section.php:275
+msgid "Toggle all sections"
+msgstr "تغيير كل الأقسام"
+
+#: inc/templates/default/transfer-settings-section.php:104
+#: inc/templates/default/transfer-settings-section.php:130
+msgid "Copy backup data"
+msgstr "نسخ بيانات النسخ الاحتياطي"
+
+#: inc/templates/default/transfer-settings-section.php:99
+msgid "Create backup file"
+msgstr "إنشاء ملف النسخ الاحتياطي"
+
+#: inc/templates/default/transfer-settings-section.php:93
+msgid "Here you can download the backup file of the last applied settings and import it to your other site from the settings restore section."
+msgstr "هنا يمكنك تنزيل ملف النسخ الاحتياطي لآخر الإعدادات المطبقة واستيرادها إلى موقعك الآخر من قسم استعادة الإعدادات."
+
+#: inc/templates/default/transfer-settings-section.php:92
+msgid "Backup Settings"
+msgstr "نسخ الإعدادات احتياطيا"
+
+#: inc/templates/default/transfer-settings-section.php:87
+#: inc/templates/default/transfer-settings-section.php:170
+#: inc/templates/default/transfer-settings-section.php:242
+msgid "Restore"
+msgstr "استعادة"
+
+#: inc/templates/default/transfer-settings-section.php:77
+#: inc/templates/default/transfer-settings-section.php:120
+msgid "Backup data"
+msgstr "بيانات النسخ الاحتياطي"
+
+#: inc/templates/default/transfer-settings-section.php:61
+msgid "Restore from clipboard"
+msgstr "استعادة من الحافظة"
+
+#: inc/templates/default/transfer-settings-section.php:56
+msgid "Restore from file"
+msgstr "استعادة من ملف"
+
+#: inc/templates/default/transfer-settings-section.php:49
+msgid "Here you can select the backup file to import and apply the settings to your site."
+msgstr "هنا يمكنك تنزيل ملف نسخ احتياطي لأحدث الإعدادات المطبقة ونقله إلى موقعك الآخر من قسم استيراد الإعدادات."
+
+#: inc/templates/default/transfer-settings-section.php:48
+msgid "Restore Settings"
+msgstr "استعادة الإعدادات"
+
+#: inc/templates/default/transfer-settings-section.php:12
+#: inc/templates/default/transfer-settings-section.php:21
+msgid "Transferring settings"
+msgstr "نقل الإعدادات"
+
+#: inc/templates/default/transfer-settings-section.php:348
+msgid "Back up"
+msgstr "نسخ احتياطي"
+
+#: inc/templates/default/transfer-settings-section.php:163
+#: inc/templates/default/transfer-settings-section.php:235
+#: inc/templates/default/transfer-settings-section.php:341
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: inc/templates/default/transfer-settings-section.php:259
+msgid "Please select the sections you want to back up"
+msgstr "الرجاء تحديد الأقسام التي تريد عمل نسخة احتياطية منها"
+
+#: inc/templates/default/default.php:191
+msgid "Hide"
+msgstr "إخفاء"
+
+#: inc/templates/default/default.php:185
+msgid "Settings have changed, you must save them!"
+msgstr "لقد تغيرت الإعدادات، يجب عليك حفظها!"
+
+#: inc/classes/SettingsPage.php:430
+msgid ""
+"Your changes have not been saved\n"
+"Are you sure you want to leave?"
+msgstr ""
+"لم يتم حفظ التغييرات الخاصة بك\n"
+"هل انت متاكد انك تريد ان تغادر؟"
+
+#: inc/templates/default/default.php:132 inc/templates/default/default.php:148
+#: inc/templates/default/default.php:175
+msgid "Reset All Sections"
+msgstr "إعادة تعيين جميع الأقسام"
+
+#: inc/templates/default/default.php:128 inc/templates/default/default.php:144
+#: inc/templates/default/default.php:171
+msgid "Reset This Section"
+msgstr "إعادة تعيين هذا القسم"
+
+#: inc/templates/default/default.php:124 inc/templates/default/default.php:140
+#: inc/templates/default/default.php:167 inc/templates/default/default.php:197
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: inc/fields/image/image.php:102
+msgid "Delete Image"
+msgstr "حذف صورة"
+
+#: inc/fields/image/image.php:97
+msgid "Select Image"
+msgstr "اختيار صورة"
+
+#: inc/fields/image/image.php:91
+msgid "Default Image"
+msgstr "الصورة الافتراضية"
+
+#: inc/fields/image/image.php:78
+msgid "There is no select image. Please select image from Wordpress media library"
+msgstr "لا توجد صورة محددة. الرجاء تحديد صورة من مكتبة وسائط Wordpress"
+
+#: inc/fields/image/image.php:76
+msgid "No Image Selected"
+msgstr "لم يتم تحديد صورة"
+
+#. Author of the plugin
+msgid "Ali Saki"
+msgstr "علی ساکی"
+
+#. Description of the plugin
+msgid "Material Settings Page for Themes\\Plugins."
+msgstr "صفحه اعدادات للقوالب والإضافات."
+
+#. Plugin Name of the plugin
+msgid "Material Settings Page"
+msgstr "Material Settings Page"

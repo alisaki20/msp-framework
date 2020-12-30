@@ -1,0 +1,33 @@
+.select-field-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.select-field-container .mdc-notched-outline__notch .mdc-floating-label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.select-field-container .mdc-select--outlined .mdc-select__anchor .mdc-select__selected-text::before {
+    display: none;
+    content: '';
+}
+
+.select-field-container .mdc-select:not(.mdc-select--disabled) .mdc-select__icon {
+    fill: rgba(0, 0, 0, .54);
+}
+
+.select-field-container .mdc-select.mdc-select--disabled .mdc-select__icon {
+    fill: rgba(0, 0, 0, .38);
+}
+
+.select-field-container .mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label {
+    color: var(--mdc-theme-primary);
+}

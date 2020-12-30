@@ -1,0 +1,44 @@
+.sorter-field-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    box-sizing: border-box;
+}
+
+.sorter-field-container > div {
+    padding: 15px;
+    text-align: center;
+    user-select: none;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
+    min-height: 100px;
+}
+
+.sorter-field-container h3 {
+    margin: 0;
+    padding: 10px 10px 0;
+}
+
+.sorter-field-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+}
+
+.sorter-field-container ul li {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.sorter-field-container ul li.placeholder {
+    border: 1px dashed #eeeeee;
+    visibility: visible;
+}

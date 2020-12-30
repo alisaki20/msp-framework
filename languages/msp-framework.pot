@@ -1,0 +1,259 @@
+# Copyright (C) 2020 Ali Saki
+# This file is distributed under the same license as the Material Settings Page plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Material Settings Page 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/options-framework\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-11-17T06:38:04+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: msp-framework\n"
+
+#. Plugin Name of the plugin
+msgid "Material Settings Page"
+msgstr ""
+
+#. Description of the plugin
+msgid "Material Settings Page for Themes\\Plugins."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ali Saki"
+msgstr ""
+
+#: inc/classes/SettingsPage.php:427
+msgid "Saving ..."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:428
+msgid "Unexpected error."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:429
+msgid "connection timeout."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:430
+msgid ""
+"Your changes have not been saved\n"
+"Are you sure you want to leave?"
+msgstr ""
+
+#: inc/classes/SettingsPage.php:432
+msgid "The backup data is not valid."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:433
+msgid "This backup is from other settings and it's not compatible with this settings."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:435
+msgid "Your backup successfully restored."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:487
+msgid "You are not logged in, please login and try again."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:491
+msgid "You do not have permission to modify these options."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:501
+msgid "The values have not been sent for save."
+msgstr ""
+
+#: inc/classes/SettingsPage.php:525
+msgid "Your changes have been saved successfully."
+msgstr ""
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:53
+msgid "'%s' is invalid hexadecimal color code"
+msgstr ""
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:69
+msgid "'%s' is invalid email"
+msgstr ""
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:85
+msgid "'%s' is invalid url"
+msgstr ""
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:101
+msgid "'%s' is not valid number"
+msgstr ""
+
+#: inc/classes/Validation.php:114
+msgid "The value should not be empty"
+msgstr ""
+
+#: inc/fields/image/image.php:76
+msgid "No Image Selected"
+msgstr ""
+
+#: inc/fields/image/image.php:78
+msgid "There is no select image. Please select image from Wordpress media library"
+msgstr ""
+
+#: inc/fields/image/image.php:91
+msgid "Default Image"
+msgstr ""
+
+#: inc/fields/image/image.php:97
+msgid "Select Image"
+msgstr ""
+
+#: inc/fields/image/image.php:102
+msgid "Delete Image"
+msgstr ""
+
+#: inc/fields/switch/switch.php:35
+msgid "Enable \\ Disable"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:12
+#: inc/templates/default/transfer-settings-section.php:21
+msgid "Transferring settings"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:22
+msgid "In this section you can transferring your settings to other site by getting backup file or copy data to clipboard"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:48
+msgid "Restore Settings"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:49
+msgid "Here you can select the backup file to import and apply the settings to your site."
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:56
+msgid "Restore from file"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:61
+msgid "Restore from clipboard"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:77
+#: inc/templates/default/transfer-settings-section.php:120
+msgid "Backup data"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:87
+#: inc/templates/default/transfer-settings-section.php:170
+#: inc/templates/default/transfer-settings-section.php:242
+msgid "Restore"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:92
+msgid "Backup Settings"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:93
+msgid "Here you can download the backup file of the last applied settings and import it to your other site from the settings restore section."
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:99
+msgid "Create backup file"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:104
+#: inc/templates/default/transfer-settings-section.php:130
+msgid "Copy backup data"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:149
+msgid "This is a backup of various settings versions and may not be compatible with this version."
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:154
+msgid "Do you want to Restore anyway?"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:163
+#: inc/templates/default/transfer-settings-section.php:235
+#: inc/templates/default/transfer-settings-section.php:341
+msgid "Cancel"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:187
+msgid "Please select the sections you want to restore"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:203
+#: inc/templates/default/transfer-settings-section.php:275
+msgid "Toggle all sections"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:217
+#: inc/templates/default/transfer-settings-section.php:289
+msgid "Section Name"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:221
+#: inc/templates/default/transfer-settings-section.php:293
+msgid "Fields Count"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:259
+msgid "Please select the sections you want to back up"
+msgstr ""
+
+#: inc/templates/default/transfer-settings-section.php:348
+msgid "Back up"
+msgstr ""
+
+#: inc/templates/default/default.php:92
+#: inc/templates/default/default.php:96
+msgid "Show all sections"
+msgstr ""
+
+#: inc/templates/default/default.php:94
+msgid "Show Separated sections"
+msgstr ""
+
+#: inc/templates/default/default.php:124
+#: inc/templates/default/default.php:140
+#: inc/templates/default/default.php:167
+#: inc/templates/default/default.php:197
+msgid "Save Changes"
+msgstr ""
+
+#: inc/templates/default/default.php:128
+#: inc/templates/default/default.php:144
+#: inc/templates/default/default.php:171
+msgid "Reset This Section"
+msgstr ""
+
+#: inc/templates/default/default.php:132
+#: inc/templates/default/default.php:148
+#: inc/templates/default/default.php:175
+msgid "Reset All Sections"
+msgstr ""
+
+#: inc/templates/default/default.php:185
+msgid "Settings have changed, you must save them!"
+msgstr ""
+
+#: inc/templates/default/default.php:191
+msgid "Hide"
+msgstr ""
+
+#: inc/templates/default/default.php:219
+msgid "Messages"
+msgstr ""
+
+#: inc/templates/default/default.php:228
+msgid "OK"
+msgstr ""

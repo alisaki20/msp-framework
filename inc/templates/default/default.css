@@ -1,0 +1,339 @@
+
+body {
+    margin: 0;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+#msp {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1px 1fr;
+    grid-template-columns: auto 1fr;
+    -ms-grid-rows: 100vh;
+    grid-template-rows: 100vh;
+    grid-template-areas: 'sidebar settings';
+    overflow: hidden;
+    grid-gap: 1px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#msp #sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: sidebar;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    -ms-grid-rows: auto 1px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'logo' 'menu';
+    grid-gap: 1px;
+    position: relative;
+}
+
+#msp #sidebar.show-menu {
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+    -moz-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+}
+
+#msp #sidebar.show-menu #logo {
+    display: none;
+}
+
+#msp #logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    background-color: white;
+    grid-area: logo;
+    padding: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#msp #logo > img {
+    width: 150px;
+    height: auto;
+}
+
+#msp #menu {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    background-color: white;
+    grid-area: menu;
+    padding: 15px;
+    overflow: auto;
+    min-width: 300px;
+    display: -ms-grid;
+    display: grid;
+    align-content: start;
+    grid-auto-flow: row;
+    grid-gap: 15px;
+}
+
+#msp #menu > ul {
+    list-style: none;
+    margin: -10px 0;
+    padding: 0;
+}
+
+#msp #menu > ul > li {
+    padding: 15px 20px;
+    margin: 10px 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    background: transparent;
+    color: black;
+    fill: black;
+}
+
+#msp #menu > ul > li.active,
+#msp #menu > ul > li:hover {
+    background-color: #f5f9ff;
+    color: #3b8aff;
+    fill: #3b8aff;
+}
+
+.msp-menu-section-icon-title {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    gap: 15px;
+}
+
+.msp-menu-section-icon-title > i {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.msp-menu-section-icon-title > i > svg {
+    width: 100%;
+    height: 100%;
+}
+
+#msp #settings {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: settings;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto 1px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'toolbar' 'settings-options';
+    grid-gap: 1px;
+    background-color: #f0f0f0;
+}
+
+#msp #toolbar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    background-color: white;
+    grid-area: toolbar;
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'tollbar-start . tollbar-end';
+    -ms-grid-columns: auto 20px 1fr 20px auto;
+    grid-template-columns: auto 1fr auto;
+}
+
+#msp #toolbar-start,
+#msp #toolbar-end {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#msp #toolbar-start {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: tollbar-start;
+}
+
+#msp #menu-show-button,
+#msp #menu-hide-button-wrapper {
+    display: none;
+}
+
+#msp #menu-hide-button-wrapper {
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+#msp #toolbar-end {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: tollbar-end;
+}
+
+#msp #settings-options {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: settings-options;
+    background-color: white;
+    overflow: auto;
+}
+
+#msp #settings-options > .mobile-buttons {
+    display: none;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+}
+
+#msp #settings-options > .mobile-buttons,
+#msp #settings-options > section {
+    margin: 30px;
+}
+
+#msp:not(.sections-all-view) #settings-options > section {
+    display: none;
+}
+
+#msp #settings-options > section.active {
+    display: block;
+}
+
+#msp .msp-fields-table {
+    width: 100%;
+    background-color: #f6f8fc;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1px;
+    padding: 1px;
+    margin: 20px 0;
+    -ms-grid-columns: 280px 1px 1fr;
+    grid-template-columns: 280px 1fr;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#msp .msp-fields-table > div {
+    background-color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#msp .msp-fields-table > .field-info .field-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+#save-notice .mdc-snackbar__actions button {
+    color: var(--mdc-theme-primary);
+}
+
+#backup-dialog {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#msp.sections-all-view #sidebar {
+    display: none;
+}
+
+#msp.sections-all-view #toolbar-start #menu-show-button {
+    display: none;
+}
+
+#msp.sections-all-view .msp-reset-section-button {
+    display: none;
+}
+
+@media screen and (max-width: 1152px) {
+    #msp #sidebar {
+        display: none;
+    }
+
+    #msp #menu-show-button {
+        display: block;
+    }
+
+    #msp #menu-hide-button-wrapper {
+        display: -ms-grid;
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #msp #toolbar-end {
+        display: none;
+    }
+
+    #msp #settings-options > .mobile-buttons {
+        display: grid;
+    }
+
+    #msp .msp-fields-table {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}

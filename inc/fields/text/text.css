@@ -1,0 +1,39 @@
+.text-field-inputs {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 15px;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.text-field-inputs .mdc-notched-outline__notch .mdc-floating-label,
+.text-field-inputs .mdc-text-field__affix,
+.text-field-inputs .mdc-text-field-helper-line .mdc-text-field-character-counter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-field-inputs .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: var(--mdc-theme-primary);
+}
+
+.text-field-inputs .mdc-text-field__icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__icon--leading,
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__icon--trailing {
+    fill: rgba(0, 0, 0, .54);
+}
+
+.text-field-inputs .mdc-text-field--disabled .mdc-text-field__icon--leading,
+.text-field-inputs .mdc-text-field--disabled .mdc-text-field__icon--trailing {
+    fill: rgba(0, 0, 0, .3);
+}

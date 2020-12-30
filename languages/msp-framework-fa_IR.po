@@ -1,0 +1,256 @@
+# Translation of Material Setings Page in Persian
+# This file is distributed under the same license as the Material Setings Page package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-30 03:19+0330\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+"Language: fa_IR\n"
+"Project-Id-Version: Material Setings Page\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: inc/templates/default/default.php:228
+msgid "OK"
+msgstr "باشه"
+
+#: inc/templates/default/default.php:219
+msgid "Messages"
+msgstr "پیام ها"
+
+#: inc/classes/Validation.php:114
+msgid "The value should not be empty"
+msgstr "این مقدار نباید خالی باشد"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:101
+msgid "'%s' is not valid number"
+msgstr "'%s' شماره نیست"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:85
+msgid "'%s' is invalid url"
+msgstr "'%s' آدرس اینترنتی نامعتبر است"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:69
+msgid "'%s' is invalid email"
+msgstr "'%s' ایمیل نامعتبر است"
+
+#. translators: %s = the given value
+#: inc/classes/Validation.php:53
+msgid "'%s' is invalid hexadecimal color code"
+msgstr "'%s' کد رنگ هگزادسیمال نامعتبر است"
+
+#: inc/fields/switch/switch.php:35
+msgid "Enable \\ Disable"
+msgstr "فعال / غیرفعال"
+
+#: inc/templates/default/default.php:94
+msgid "Show Separated sections"
+msgstr "نمایش بخشهای جدا شده"
+
+#: inc/templates/default/default.php:92 inc/templates/default/default.php:96
+msgid "Show all sections"
+msgstr "نمایش تمام بخشها"
+
+#: inc/templates/default/transfer-settings-section.php:187
+msgid "Please select the sections you want to restore"
+msgstr "لطفاً بخشهایی را که می خواهید بازیابی کنید انتخاب کنید"
+
+#: inc/templates/default/transfer-settings-section.php:154
+msgid "Do you want to Restore anyway?"
+msgstr "آیا به هر حال می خواهید درون ریزی کنید؟"
+
+#: inc/templates/default/transfer-settings-section.php:149
+msgid "This is a backup of various settings versions and may not be compatible with this version."
+msgstr "این نسخه پشتیبان از نسخه تنظیمات مختلف است و ممکن است با این نسخه سازگار نباشد."
+
+#: inc/templates/default/transfer-settings-section.php:22
+msgid "In this section you can transferring your settings to other site by getting backup file or copy data to clipboard"
+msgstr "در این بخش می توانید با دریافت فایل پشتیبان یا کپی داده ها در حافظه، تنظیمات خود را به سایت دیگر منتقل کنید"
+
+#: inc/classes/SettingsPage.php:525
+msgid "Your changes have been saved successfully."
+msgstr "تغییرات شما با موفقیت ذخیره شد."
+
+#: inc/classes/SettingsPage.php:501
+msgid "The values have not been sent for save."
+msgstr "مقادیر برای ذخیره ارسال نشده اند."
+
+#: inc/classes/SettingsPage.php:491
+msgid "You do not have permission to modify these options."
+msgstr "شما اجازه تغییر این گزینه ها را ندارید."
+
+#: inc/classes/SettingsPage.php:487
+msgid "You are not logged in, please login and try again."
+msgstr "شما وارد سیستم نشده اید، لطفا وارد شوید و دوباره امتحان کنید."
+
+#: inc/classes/SettingsPage.php:435
+msgid "Your backup successfully restored."
+msgstr "پشتیبان گیری شما با موفقیت درون ریزی شده است."
+
+#: inc/classes/SettingsPage.php:433
+msgid "This backup is from other settings and it's not compatible with this settings."
+msgstr "این نسخه پشتیبان از تنظیمات دیگر تهیه شده است و با این تنظیمات سازگار نیست."
+
+#: inc/classes/SettingsPage.php:432
+msgid "The backup data is not valid."
+msgstr "اطلاعات پشتیبان گیری نامعتبر است."
+
+#: inc/classes/SettingsPage.php:429
+msgid "connection timeout."
+msgstr "زمان اتصال منقضی شد."
+
+#: inc/classes/SettingsPage.php:428
+msgid "Unexpected error."
+msgstr "خطای غیرمنتظره."
+
+#: inc/classes/SettingsPage.php:427
+msgid "Saving ..."
+msgstr "در حال ذخیره ..."
+
+#: inc/templates/default/transfer-settings-section.php:221
+#: inc/templates/default/transfer-settings-section.php:293
+msgid "Fields Count"
+msgstr "تعداد فیلدها"
+
+#: inc/templates/default/transfer-settings-section.php:217
+#: inc/templates/default/transfer-settings-section.php:289
+msgid "Section Name"
+msgstr "نام بخش"
+
+#: inc/templates/default/transfer-settings-section.php:203
+#: inc/templates/default/transfer-settings-section.php:275
+msgid "Toggle all sections"
+msgstr "تغییر همه بخشها"
+
+#: inc/templates/default/transfer-settings-section.php:104
+#: inc/templates/default/transfer-settings-section.php:130
+msgid "Copy backup data"
+msgstr "کپی کردن داده های پشتیبان گیری"
+
+#: inc/templates/default/transfer-settings-section.php:99
+msgid "Create backup file"
+msgstr "ایجاد فایل پشتیبان گیری"
+
+#: inc/templates/default/transfer-settings-section.php:93
+msgid "Here you can download the backup file of the last applied settings and import it to your other site from the settings restore section."
+msgstr "در اینجا می توانید فایل پشتیبان گیری از آخرین تنظیمات اعمال شده را بارگیری کرده و از قسمت درون ریزی تنظیمات، آن را به سایت دیگر خود انتقال دهید."
+
+#: inc/templates/default/transfer-settings-section.php:92
+msgid "Backup Settings"
+msgstr "پشتیبان گیری تنظیمات"
+
+#: inc/templates/default/transfer-settings-section.php:87
+#: inc/templates/default/transfer-settings-section.php:170
+#: inc/templates/default/transfer-settings-section.php:242
+msgid "Restore"
+msgstr "درون ریزی"
+
+#: inc/templates/default/transfer-settings-section.php:77
+#: inc/templates/default/transfer-settings-section.php:120
+msgid "Backup data"
+msgstr "داده ها پشتیبان گیری"
+
+#: inc/templates/default/transfer-settings-section.php:61
+msgid "Restore from clipboard"
+msgstr "بازیابی از حافظه"
+
+#: inc/templates/default/transfer-settings-section.php:56
+msgid "Restore from file"
+msgstr "درون ریزی از فایل"
+
+#: inc/templates/default/transfer-settings-section.php:49
+msgid "Here you can select the backup file to import and apply the settings to your site."
+msgstr "در اینجا می توانید فایل پشتیبان را برای وارد کردن و اعمال تنظیمات روی سایت خود انتخاب کنید."
+
+#: inc/templates/default/transfer-settings-section.php:48
+msgid "Restore Settings"
+msgstr "درون ریزی تنظیمات"
+
+#: inc/templates/default/transfer-settings-section.php:12
+#: inc/templates/default/transfer-settings-section.php:21
+msgid "Transferring settings"
+msgstr "انتقال تنظیمات"
+
+#: inc/templates/default/transfer-settings-section.php:348
+msgid "Back up"
+msgstr "پشتیبان گیری"
+
+#: inc/templates/default/transfer-settings-section.php:163
+#: inc/templates/default/transfer-settings-section.php:235
+#: inc/templates/default/transfer-settings-section.php:341
+msgid "Cancel"
+msgstr "لغو"
+
+#: inc/templates/default/transfer-settings-section.php:259
+msgid "Please select the sections you want to back up"
+msgstr "لطفاً بخشهایی را که می خواهید از آنها نسخه پشتیبان تهیه کنید انتخاب کنید"
+
+#: inc/templates/default/default.php:191
+msgid "Hide"
+msgstr "مخفی کردن"
+
+#: inc/templates/default/default.php:185
+msgid "Settings have changed, you must save them!"
+msgstr "تنظیمات تغییر کرده است، شما باید آنها را ذخیره کنید!"
+
+#: inc/classes/SettingsPage.php:430
+msgid ""
+"Your changes have not been saved\n"
+"Are you sure you want to leave?"
+msgstr ""
+"تغییرات شما ذخیره نشده است\n"
+"آیا مطمئن هستید که میخواهید خارج شوید؟"
+
+#: inc/templates/default/default.php:132 inc/templates/default/default.php:148
+#: inc/templates/default/default.php:175
+msgid "Reset All Sections"
+msgstr "بازنشانی همه بخشها"
+
+#: inc/templates/default/default.php:128 inc/templates/default/default.php:144
+#: inc/templates/default/default.php:171
+msgid "Reset This Section"
+msgstr "این بخش را بازنشانی کنید"
+
+#: inc/templates/default/default.php:124 inc/templates/default/default.php:140
+#: inc/templates/default/default.php:167 inc/templates/default/default.php:197
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#: inc/fields/image/image.php:102
+msgid "Delete Image"
+msgstr "حذف تصویر"
+
+#: inc/fields/image/image.php:97
+msgid "Select Image"
+msgstr "انتخاب تصویر"
+
+#: inc/fields/image/image.php:91
+msgid "Default Image"
+msgstr "تصویر پیش فرض"
+
+#: inc/fields/image/image.php:78
+msgid "There is no select image. Please select image from Wordpress media library"
+msgstr "هیچ تصویری انتخاب نشده است. لطفاً تصویر را از کتابخانه رسانه وردپرس انتخاب کنید"
+
+#: inc/fields/image/image.php:76
+msgid "No Image Selected"
+msgstr "هیچ تصویری انتخاب نشده است"
+
+#. Author of the plugin
+msgid "Ali Saki"
+msgstr "علی ساکی"
+
+#. Description of the plugin
+msgid "Material Settings Page for Themes\\Plugins."
+msgstr "صفحه تنظیمات برای پوسته ها و افزونه ها."
+
+#. Plugin Name of the plugin
+msgid "Material Settings Page"
+msgstr "Material Settings Page"
