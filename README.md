@@ -19,7 +19,7 @@ Go to your main php file (functions.php in themes)
 
 #### 3. Create config object and set the configurations you want to apply
 
-		$config = new Config();
+	$config = new Config();
 
 for example:
 
@@ -54,35 +54,35 @@ for example:
 	add_action( "MSPFramework/$option_name/head", function () {
 		// Set settings page favicon
 		$favicon_url = esc_url( get_template_directory_uri() . '/assets/img/favicon' ); ?>
-	    <link rel="icon" type="image/png" sizes="196x196" href="<?php echo "$favicon_url-192x192.png"; ?>">
-	    <link rel="icon" type="image/png" sizes="150x150" href="<?php echo "$favicon_url-150x150.png"; ?>">
-	    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo "$favicon_url-96x96.png"; ?>">
-	    <link rel="icon" type="image/png" sizes="64x64" href="<?php echo "$favicon_url-64x64.png"; ?>">
-	    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo "$favicon_url-32x32.png"; ?>">
-	    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo "$favicon_url-16x16.png"; ?>">
+		<link rel="icon" type="image/png" sizes="196x196" href="<?php echo "$favicon_url-192x192.png"; ?>">
+		<link rel="icon" type="image/png" sizes="150x150" href="<?php echo "$favicon_url-150x150.png"; ?>">
+		<link rel="icon" type="image/png" sizes="96x96" href="<?php echo "$favicon_url-96x96.png"; ?>">
+		<link rel="icon" type="image/png" sizes="64x64" href="<?php echo "$favicon_url-64x64.png"; ?>">
+		<link rel="icon" type="image/png" sizes="32x32" href="<?php echo "$favicon_url-32x32.png"; ?>">
+		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo "$favicon_url-16x16.png"; ?>">
 		// include font face of the font you want to use in settings page
 		// if you are not use custom font you delete this line
-	    <link rel="stylesheet" type="text/css" href="<?php
-		echo esc_url( get_template_directory_uri() . '/assets/font/font-face.css' ); ?>">
-	    <style>
-	        :root {
+		<link rel="stylesheet" type="text/css" href="<?php
+			echo esc_url( get_template_directory_uri() . '/assets/font/font-face.css' ); ?>">
+		<style>
+	        	:root {
 				/* set primary and secendary colors */
-	            --mdc-theme-primary: #2196f3;
-	            --mdc-theme-secondary: #FFC107;
+				--mdc-theme-primary: #2196f3;
+				--mdc-theme-secondary: #FFC107;
 				/* set font family name
 				if you are not use custom font you delete this variable */
-	            --mdc-typography-font-family: /* Font Family */;
+				--mdc-typography-font-family: /* Font Family */;
 				/* fix letter spacing for some languages
 				if you are only support english you can delete this lins */
-	            --mdc-typography-button-letter-spacing: normal;
-	            --mdc-typography-headline1-letter-spacing: normal;
-	            --mdc-typography-headline2-letter-spacing: normal;
-	            --mdc-typography-headline3-letter-spacing: normal;
-	            --mdc-typography-headline4-letter-spacing: normal;
-	            --mdc-typography-headline5-letter-spacing: normal;
-	            --mdc-typography-headline6-letter-spacing: normal;
-	        }
-	    </style>
+				--mdc-typography-button-letter-spacing: normal;
+				--mdc-typography-headline1-letter-spacing: normal;
+				--mdc-typography-headline2-letter-spacing: normal;
+				--mdc-typography-headline3-letter-spacing: normal;
+				--mdc-typography-headline4-letter-spacing: normal;
+				--mdc-typography-headline5-letter-spacing: normal;
+				--mdc-typography-headline6-letter-spacing: normal;
+			}
+		</style>
 	<?php } );
 
 #### 7. Add the your sections to settings page:
