@@ -3,28 +3,30 @@
 namespace MSPFramework;
 
 class Field_image extends Field {
-    public static function enqueue_assets( $settings_page ) {
+    public static function enqueue_assets( $settings_page )
+    {
         $field_path = Utilities::get_dir_path( __DIR__ );
         $field_url  = Utilities::get_dir_url( __DIR__ );
 
         $min = $settings_page->config->debug_mod ? '.min' : '';
 
-		wp_enqueue_style(
-			'msp-image-field',
-			$field_url . "image$min.css",
-			array(),
-			md5( filectime( $field_path . "image$min.css" ) )
-		);
-		wp_enqueue_script(
-			'msp-image-field',
-			$field_url . "image$min.js",
-			array( 'msp-jquery', 'mdc' ),
-			md5( filectime( $field_path . "image$min.js" ) ),
-			true
-		);
-	}
+        wp_enqueue_style(
+            'msp-image-field',
+            $field_url . "image$min.css",
+            array(),
+            md5( filectime( $field_path . "image$min.css" ) )
+        );
+        wp_enqueue_script(
+            'msp-image-field',
+            $field_url . "image$min.js",
+            array( 'msp-jquery', 'mdc' ),
+            md5( filectime( $field_path . "image$min.js" ) ),
+            true
+        );
+    }
 
-	function render() {
+
+    function render() {
 		$options = $this->options;
 		$input   = array(
 			'id'            => $this->id,

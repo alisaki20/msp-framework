@@ -6,9 +6,9 @@ A Wordpress Theme\Plugin framework For Create Settings Page
 
 #### 1. Download the latest version of this repository and store it in a folder in your theme\plugin folder
 
-for example: git clone https://github.com/alisaki20/msp-framework.git oprions-framework
+for example: git clone https://github.com/alisaki20/msp-framework.git options-framework
 
-#### 2. Add the this include code at the top of file:
+#### 2. Add the include code at the top of file:
 
 Go to your main php file (functions.php in themes)
 
@@ -28,27 +28,27 @@ for example:
 	$config->page_logo_url = get_template_directory_uri() . '/assets/img/logo.svg';
 	$config->menu_title = __( 'Settings Page', 'text-domain' );
 
-#### 4. Set a oprion name:
+#### 4. Set option name:
 
-the option name is should be a unique key. all your settings are store in database using that.
+the option name it should be a unique key. all your settings are store in a database using that.
 
 	$option_name = "example_settings_page";
 
 #### 5. Create settings page object:
 
-Now we should create a object that contain all settings page data.
+Now we should create an object that contain all settings page data.
 
 	$settingsPage = new SettingsPage( $option_name, 1, $config );
 
 ##### Parameters:
 
-The first parameter is the unique option name your chosen that for your settings page.
-The secound parameter is the version of settings page. You should increase that in every time you are add or delete fields or sections or you can simply provide the release version of your Plugin\Theme.
-The third parameter is the configuration object that we created in the previous steps.
+1. The first parameter is the unique option name your chosen that for your settings page.
+2. The second parameter is the version of settings pages. You should increase that in every time you are added or delete fields or sections, or you can simply provide the release version of your Plugin\Theme.
+3. The third parameter is the configuration object that we created in the previous steps.
 
-#### 6. **Only of you are using default template**: Coustomize Your Settings Page
+#### 6. **Only of you are using default template**: Customize Your Settings Page
 
-The default theme is based on "google material components web" you should coustomize your settings page color and add some changes.
+The default theme is based on "google material components web" you should customize your settings page color and add some changes.
 for example:
 
 	add_action( "MSPFramework/$option_name/head", function () {
@@ -85,7 +85,7 @@ for example:
 		</style>
 	<?php } );
 
-#### 7. Add the your sections to settings page:
+#### 7. Add the sections to settings page:
 
 	$settingsPage->add_fields_section_array(array(
 		'id' => 'general',
@@ -97,18 +97,18 @@ for example:
 
 ##### Parameters:
 
-the "id" parameter is required. if it's not setted the section will be not registered
-the "name" parameter is required. it's the name that are should appeared in the settings sections menu
-the "icon" parameter is optional. it's the icon that are should appeared  in the settings sections menu
-the "title" parameter is optional. it's the title that are should appeared on the top of fields when the section are selected
-the "subtitle" parameter is optional. it's the subtitle that are should appeared on the top of fields when the section are selected
-the "fields" parameter is optional. by the parameter you can send an array of fields to set im the section instead of set them spracted
+1. the "id" parameter is required. if it's not provided the section will be not registered
+2. the "name" parameter is required. it's the name that are should appear in the settings sections menu
+3. the "icon" parameter is optional. it's the icon that are should appear  in the settings sections menu
+4. the "title" parameter is optional. it's the title that are should appear on the top of fields when the section are selected
+5. the "subtitle" parameter is optional. it's the subtitle that are should appear on the top of fields when the section are selected
+6. the "fields" parameter is optional. by the parameter you can send an array of fields to set im the section instead of set them separated
 
 ##### Note:
 
 you can use "add_fields_section**s**_array" function to set an array of section. every section array should have same parameters as described above.
 
-#### 8. Add the your fields to sections:
+#### 8. Add the fields to sections:
 
 	add_field_array(array(
 		'id' => 'example-switch',
@@ -130,17 +130,17 @@ or
 
 ##### Parameters:
 
-the "section_id" parameter is required. it's the id of the section this field should appear in that.
-the "id" parameter is required. it's is the id of the field. if it's not setted the field will be not registered
-the "type" parameter is required. it's is the type of the field. if it's not setted the field will be not registered
-the "title" parameter is optional. it's the title that are should appeared on the near of field
-the "subtitle" parameter is optional. it's the subtitle that are should appeared on the near of field
-the "default_value" parameter is optional. this parameter determine the default value of the field
-the "options" parameter is optional. this parameter is use to send extra options to the field controller
+1. the "section_id" parameter is required. it's the id of the section this field should appear in that.
+2. the "id" parameter is required. it is the id of the field. if it's not provided the field will be not registered
+3. the "type" parameter is required. it is the type of the field. if it's not provided the field will be not registered
+4. the "title" parameter is optional. it's the title that are should appear on the near of field
+5. the "subtitle" parameter is optional. it's the subtitle that are should appear on the near of field
+6. the "default_value" parameter is optional. this parameter determines the default value of the field
+7. the "options" parameter is optional. this parameter is used to send extra options to the field controller
 
 ##### Notes:
 
-1. the "section_id" parameter well seted automatically if you are setteing the fields by section "fields" parameter
+1. the "section_id" parameter well set automatically if you are setting the fields by section array "fields" parameter
 2. you can use "add_field**s**_array" function to set an array of fields. every field array should have same parameters as described above.
 
 #### 9. Initialize settings page

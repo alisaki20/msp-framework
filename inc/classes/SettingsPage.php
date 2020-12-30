@@ -427,10 +427,12 @@ class SettingsPage {
 		$this->template->enqueue_assets();
 
 		foreach ( $this->sections as $section ) {
+		    if ($section instanceof Section)
 			$section::enqueue_assets( $this );
 		}
 
 		foreach ( $this->used_field_types as $field_type ) {
+		    if ($field_type instanceof Field)
 			$field_type::enqueue_assets( $this );
 		}
 
@@ -498,7 +500,8 @@ class SettingsPage {
 		foreach ( $received_values as $field_name => $value ) {
 			if ( isset( $this->fields[ $field_name ] ) ) {
 				$field = $this->fields[ $field_name ];
-				if ( $field instanceof ValidatableField and $field->hasValidator() ) {
+				if ( $field instanceof Field and
+                    $field instanceof ValidatableField and $field->hasValidator() ) {
 					$response_values[ $field_name ] = $field->validate( $value );
 					if ( ! isset( $response_values[ $field_name ][ 'value' ] ) ) {
 						$response_values[ $field_name ][ 'value' ] = $value;

@@ -55,7 +55,7 @@ abstract class Section {
      *
      * @param SettingsPage $settings_page
      */
-    public static function enqueue_assets( $setting_page )
+    public static function enqueue_assets( $settings_page )
     {
     }
 
