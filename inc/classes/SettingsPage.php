@@ -132,16 +132,22 @@ class SettingsPage {
 	 * @noinspection PhpIncludeInspection
 	 */
 	private function load_field_types() {
+	    $founded_types = array();
+
 		foreach ( scandir( $this->framework_path . 'inc/fields/' ) as $field ) {
 			$field_path = "{$this->framework_path}inc/fields/$field/$field.php";
 			if ( $field !== '.' && $field !== '..' && $field_path ) {
 				include_once $field_path;
 				$class_name = '\MSPFramework\Field_' . $field;
 				if ( class_exists( $class_name ) && is_subclass_of( $class_name, '\MSPFramework\Field' ) ) {
-					$this->registered_field_types[ $field ] = $class_name;
+					$founded_types[ $field ] = $class_name;
 				}
 			}
 		}
+
+        $founded_types = apply_filters( "MSPFramework/{$this->option_name}/load_field_types", $founded_types );
+
+		$this->registered_field_types = array_merge($this->registered_field_types, $founded_types);
 	}
 
 	/**
