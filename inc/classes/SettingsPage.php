@@ -379,7 +379,7 @@ class SettingsPage {
 
 		wp_enqueue_media();
 
-		$min = $this->config->debug_mod ? '.min' : '';
+		$min = $this->config->debug_mod ? '' : '.min';
 
 		wp_enqueue_script(
 			'msp-jquery',
@@ -434,12 +434,12 @@ class SettingsPage {
 
 		foreach ( $this->sections as $section ) {
 		    if ($section instanceof Section)
-			$section::enqueue_assets( $this );
+		        $section::enqueue_assets( $this );
 		}
 
 		foreach ( $this->used_field_types as $field_type ) {
-		    if ($field_type instanceof Field)
-			$field_type::enqueue_assets( $this );
+		    if (is_subclass_of( $field_type, '\MSPFramework\Field' ))
+		        $field_type::enqueue_assets( $this );
 		}
 
 		do_action( "MSPFramework/{$this->option_name}/enqueue_assets" );

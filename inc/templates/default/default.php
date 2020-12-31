@@ -20,7 +20,7 @@ class Template_default extends Template {
 		$template_path = Utilities::get_dir_path( __DIR__ );
 		$template_url  = Utilities::get_dir_url( __DIR__ );
 
-        $min = $this->settings_page->config->debug_mod ? '.min' : '';
+        $min = $this->settings_page->config->debug_mod ? '' : '.min';
 
 		wp_enqueue_style(
 			'msp-default-template',

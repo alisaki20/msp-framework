@@ -28,7 +28,7 @@ class TransferSettingsSection extends Section {
         $template_path = Utilities::get_dir_path( __DIR__ );
         $template_url = Utilities::get_dir_url( __DIR__ );
 
-        $min = $settings_page->config->debug_mod ? '.min' : '';
+        $min = $settings_page->config->debug_mod ? '' : '.min';
 
 		wp_enqueue_style(
 			'msp-default-template-transfer-settings-section',

@@ -8,7 +8,7 @@ class Field_image extends Field {
         $field_path = Utilities::get_dir_path( __DIR__ );
         $field_url  = Utilities::get_dir_url( __DIR__ );
 
-        $min = $settings_page->config->debug_mod ? '.min' : '';
+        $min = $settings_page->config->debug_mod ? '' : '.min';
 
         wp_enqueue_style(
             'msp-image-field',
